@@ -1,0 +1,13 @@
+ install.packages("dplyr")library(dplyr)
+sessionInfo()
+##Inbuilt data Set called "mtcars"
+mtcars %>% head() ## also dim() , nrow() , ncol()  , names()  (just first 5) class()  mtcars %>% dim() mtcars %>% nrow() mtcars %>% ncol() mtcars %>% names() mtcars %>% class() mtcars %>% summary()
+iris %>% summary()
+iris %>% glimpse()
+iris2 <- iris %>% filter(Species == "setosa")
+iris2 <- filter(iris,Species == "setosa")
+iris2 %>% dim()
+iris3 <- iris%>% filter(Sepal.Length >5.2) iris3 %>% dim() iris3 <- iris%>% filter(Sepal.Length >5.4) iris3 %>% dim() iris3 <- iris%>% filter(Sepal.Length >5) iris3 %>% dim()
+ iris %>% filter(Sepal.Length >5 ) %>% dim()
+
+history(60)
